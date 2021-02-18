@@ -174,7 +174,11 @@ $(function(){
 
 		if(iso != languageIso) {
 			let link = location.href;
-			link = link.replace('/' + languageIso + '/', '/' + iso + '/');
+			if(link.indexOf('/' + languageIso + '/') > 0) {
+				link = link.replace('/' + languageIso + '/', '/' + iso + '/');
+			} else {
+				link = $(this).attr('href');
+			}
 			location.href = link;
 		}
 

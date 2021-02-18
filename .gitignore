@@ -1,2 +1,5 @@
 _sources/
 vendor/
+github.com
+.DS_Store
+src

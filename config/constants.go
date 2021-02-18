@@ -23,7 +23,7 @@ var (
 func SetConstants() {
 	path, _ := os.Getwd()
 
-	PATH = path + "/../src/api/"
+	PATH = path + "/../src/"
 
 	HTML_WEB = HOME_URL + "html/"
 	HTML_PATH = PATH + "html/"

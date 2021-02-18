@@ -1,9 +1,9 @@
 package main
 
 import (
-    "api/config"
-    "api/model"
-    "api/helper"
+    "config"
+    "model"
+    "helper"
     "log"
 	"time"
 	"bytes"
