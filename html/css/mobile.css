@@ -1,0 +1,83 @@
+@media screen and (max-width: 990px){
+    .block-center, .bg-block-center {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .frm-item input, .frm-item select {
+        width: 150px;
+    }
+    textarea {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .customers-main .control {
+        flex-direction: column;
+    }
+    .customers-main .control .paginator {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .customers-main .items tr {
+        display: block;
+        padding: 7px 0px;
+    }
+    .customers-main .items th, 
+    .customers-main .items td.nomobile {
+        display: none;
+    }
+    .customers-main .items td {
+        display: flex;
+        padding: 3px 0px;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .customers-main .items td label {
+        display: inline-block;
+    }
+    .frm-item {
+        flex-wrap: wrap;
+    }
+
+    .mobile-tac {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 600px){
+    input, select, textarea, .bg-input {
+        padding: 0px 5px;
+    }
+    textarea {
+        padding: 3px 5px;
+        width: 100%;
+    }
+    button, .btn {
+        padding: 0px 10px;
+    }
+
+    .customers-main .control > .frm-item {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .customers-main .control form {
+        margin-top: 10px;
+    }
+    .customers-main .control input {
+        width: 70px;
+        margin-right: 5px;
+    }
+
+    .customer-one .info .values {
+        text-align: right;
+    }
+    
+    .customers-main .control .btn, .customers-main .control button {
+        margin-right: 5px;
+    }
+}
+
+
+

@@ -1,0 +1,38 @@
+hash: 139abdae1ac37dc924d6cd6c89e4d3cf092112b9b0c714105f89316fb152ed6a
+updated: 2021-02-17T14:26:26.629903914+02:00
+imports:
+- name: github.com/go-playground/locales
+  version: ac5643571b2e4508ec50f9a132b5a683412b5bbe
+  subpackages:
+  - currency
+- name: github.com/go-playground/universal-translator
+  version: f87b1403479a348651dbf5f07f5cc6e5fcf07008
+- name: github.com/go-playground/validator
+  version: f6584a41c8acc5dfc0b62f7962811f5231c11530
+- name: github.com/gorilla/mux
+  version: 98cb6bf42e086f6af920b965c38cacc07402d51b
+- name: github.com/jinzhu/gorm
+  version: 6f4358eeb5e3df768c182ae54d90ceacff0880a8
+  subpackages:
+  - dialects/postgres
+- name: github.com/jinzhu/inflection
+  version: b5281034e75ed100658f8d9d0b2837f3fad4e8b3
+- name: github.com/leodido/go-urn
+  version: 6c96508144d00b380edbc8bda077e27b832d0c7b
+- name: github.com/lib/pq
+  version: 072e83d238c297c71cab11154695af301010031e
+  subpackages:
+  - hstore
+  - oid
+  - scram
+- name: github.com/rs/cors
+  version: db0fe48135e83b5812a5a31be0eea66984b1b521
+- name: golang.org/x/crypto
+  version: eec23a3978adcfd26c29f4153eaa3e3d9b2cc53a
+  subpackages:
+  - sha3
+- name: golang.org/x/sys
+  version: b926d437f3417e0b2853746eb2ff872a6bf46768
+  subpackages:
+  - cpu
+testImports: []

@@ -1,0 +1,56 @@
+ <div class="customers-main js-customers">
+    <h1>{{.StrCustomers}}</h1>
+    <div class="control">
+        <div class="frm-item">
+            <a href="{{.LinkAdd}}" class="btn js-link-add">{{.StrAdd}}</a>
+            <form class="js-frm-search" action="" method="GET">
+                <div class="frm-item">
+                    <input name="fname" value="" placeholder="{{.StrFname}}" />
+                    <input name="lname" value="" placeholder="{{.StrLname}}" />
+                    <button>{{.StrSearch}}</button>
+                    <a href="#" class="btn js-link-search-clear">{{.StrClear}}</a>
+                </div>
+                <div class="error"></div>
+            </form>
+        </div>
+        <div class="paginator js-paginator">
+            {{.Paginator}}
+        </div>
+    </div>
+
+    <table class="items js-items">
+        <thead>
+            <tr>
+                <th><a href="#" data-sort="first_name" data-desc="0">{{.StrFname}}<span></span></a></th>
+                <th><a href="#" class="active" data-sort="last_name" data-desc="0">{{.StrLname}}<span>&darr;</span></a></th>
+                <th><a href="#" data-desc="0">{{.StrEmail}}<span></span></a></th>
+                <th><a href="#" data-sort="birth_date" data-desc="0">{{.StrBirthDate}}<span></span></a></th>
+                <th>{{.StrGender}}</th>
+                <th>{{.StrAddress}}</th>
+                <th>{{.StrActions}}</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{.Items}}
+        </tbody>
+    </table>
+
+    <div class="control">
+        <div class="frm-item">
+            <a href="{{.LinkAdd}}" class="btn js-link-add">{{.StrAdd}}</a>
+            <form class="js-frm-search" action="" method="GET">
+                <div class="frm-item">
+                    <input name="fname" value="" placeholder="{{.StrFname}}" />
+                    <input name="lname" value="" placeholder="{{.StrLname}}" />
+                    <button>{{.StrSearch}}</button>
+                    <a href="#" class="btn js-link-search-clear">{{.StrClear}}</a>
+                </div>
+                <div class="error"></div>
+            </form>
+        </div>
+        <div class="paginator js-paginator">
+            {{.Paginator}}
+        </div>
+    </div>
+</div>

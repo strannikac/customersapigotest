@@ -1,0 +1,8 @@
+package: api
+import:
+- package: github.com/gorilla/mux
+- package: github.com/jinzhu/gorm
+  subpackages:
+  - dialects/postgres
+- package: github.com/rs/cors
+- package: github.com/go-playground/validator

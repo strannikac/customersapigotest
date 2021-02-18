@@ -1,0 +1,158 @@
+header {
+    position: fixed;
+    background-color: #efffef;
+    margin: 0;
+    padding: 20px 0px;
+    box-shadow: 1px -1px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    line-height: 1.2;
+    z-index: 500;
+}
+
+header .header-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+header .logo {
+    margin-top: -5px;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* ------ header lang start ----- */
+header .lang-switcher {
+    position: relative;
+    margin-left: 20px;
+}
+header .lang-switcher {
+    z-index: 100;
+}
+header .lang-switcher .current {
+    cursor: pointer;
+}
+header .lang-switcher ul {
+    list-style: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+    flex-direction: column;
+    margin: -5px 0px 0px -10px;
+    background: rgba(255, 255, 255, 1);
+}
+header .lang-switcher li a {
+    display: block;
+    white-space: nowrap;
+    padding: 5px 10px;
+}
+header .lang-switcher li.sel a {
+    font-weight: 900;
+}
+header .lang-switcher li a:hover {
+    background-color: #007700;
+    color: #ffffff;
+    text-decoration: none;
+}
+header .lang-switcher img {
+    height: 20px;
+    width: auto;
+    margin-right: 5px;
+    margin-bottom: -1px;
+    vertical-align: bottom;
+}
+/* ------ header lang end ----- */
+
+/* ---------- footer start ---------- */
+footer {
+    padding: 20px 0px;
+    margin-top: auto;
+    background-color: #007700;
+    color: #ffffff;
+    z-index: 100;
+}
+
+footer .footer-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* ---------- footer end ---------- */
+
+.block-main {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.customers-main .items {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.customers-main .items tr {
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #007700;
+}
+.customers-main .items th {
+    background-color: #dfffdf;
+    padding: 5px 10px;
+}
+.customers-main .items td {
+    padding: 5px 10px;
+}
+.customers-main .items td label {
+    display: none;
+}
+
+.customers-main .control {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.customers-main .control .frm-item {
+    margin-top: 0px;
+}
+.customers-main .control input {
+    width: 90px;
+}
+.customers-main .control .btn, .customers-main .control button {
+    margin-right: 10px;
+}
+.customers-main .paginator {
+    text-align: right;
+}
+.customers-main .paginator a, 
+.customers-main .paginator span {
+    display: inline-block;
+    margin-right: 5px;
+}
+.customers-main .paginator a.active {
+    cursor: default;
+    color: #373F41;
+    font-weight: 700;
+}
+.customers-main .paginator a.active:hover {
+    text-decoration: none;
+}
+
+.customer-one .info {
+    display: flex;
+    margin-top: 10px;
+}
+.customer-one .info .labels {
+    width: 100px;
+    min-width: 100px;
+}
+.customer-one .info p {
+    margin-top: 5px;
+}
+
+.customer-form form {
+    margin-top: 15px;
+}

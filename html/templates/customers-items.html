@@ -1,0 +1,35 @@
+{{range .Items}}
+<tr data-id="{{.Id}}">
+    <td>
+        <label>{{.StrFname}}:</label>
+        <span><a href="{{.LinkOne}}" class="js-link-one">{{.FirstName}}</a></span>
+    </td>
+    <td>
+        <label>{{.StrLname}}:</label>
+        <span><a href="{{.LinkOne}}" class="js-link-one">{{.LastName}}</a></span>
+    </td>
+    <td>
+        <label>{{.StrEmail}}:</label>
+        <span>{{.Email}}</span>
+    </td>
+    <td>
+        <label>{{.StrBirthDate}}:</label>
+        <span>{{.BirthDate}}</span>
+    </td>
+    <td>
+        <label>{{.StrGender}}:</label>
+        <span>{{.Gender}}</span>
+    </td>
+    <td>
+        <label>{{.StrAddress}}:</label>
+        <span>{{.Address}}</span>
+    </td>
+    <td>
+        <label>&#160;</label>
+        <span>
+            <a href="{{.LinkEdit}}" class="js-link-edit">{{.StrEdit}}</a>
+            <a href="#" class="js-link-delete">{{.StrDelete}}</a>
+        </span>
+    </td>
+</tr>
+{{end}}

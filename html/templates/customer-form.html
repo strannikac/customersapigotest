@@ -1,0 +1,44 @@
+<div class="customer-form js-customer-form">
+    <h1>{{.StrAction}}</h1>
+    <p><a href="{{.LinkBack}}">{{.StrBackToCustomers}}</a></p>
+
+    <form class="js-frm-customer" method="POST" action="">
+        <input name="id" type="hidden" value="{{.Id}}" />
+
+        <div class="error"></div>
+        <div class="success"></div>
+
+        <div class="frm-item">
+            <button>{{.StrSave}}</button>
+        </div>
+
+        <div class="frm-item">
+            <input name="fname" value="{{.FirstName}}" placeholder="{{.StrFname}}" required="required" />
+            <input name="lname" value="{{.LastName}}" placeholder="{{.StrLname}}" required="required" />
+        </div>
+
+        <div class="frm-item">
+            <input name="email" type="email" value="{{.Email}}" placeholder="{{.StrEmail}}" required="required" />
+            <input name="birthdate" class="js-datepicker js-birthdate" value="{{.BirthDate}}" placeholder="{{.StrBirthDate}}" required="required" readonly="readonly" />
+        </div>
+
+        {{$gender := .Gender}}
+        <div class="frm-item">
+            <label><input name="gender" type="radio" value="1"{{if eq $gender 1}} checked="checked"{{end}} />{{.StrMale}}</label>
+            <label><input name="gender" type="radio" value="2"{{if eq $gender 2}} checked="checked"{{end}} />{{.StrFemale}}</label>
+        </div>
+
+        <div class="frm-item">
+            <textarea name="address" placeholder="{{.StrAddress}}">{{.Address}}</textarea>
+        </div>
+
+        <div class="frm-item">
+            <button>{{.StrSave}}</button>
+        </div>
+
+        <div class="error"></div>
+        <div class="success"></div>
+    </form>
+
+    <p><a href="{{.LinkBack}}">{{.StrBackToCustomers}}</a></p>
+</div>

@@ -1,0 +1,8 @@
+{{$current := .CurrentPage}}
+{{range $i := .Pages}}
+    {{if eq $current $i}}
+        <a href="#" class="active" data-id="{{$i}}">{{$i}}</a>
+    {{else}}
+        <a href="#" data-id="{{$i}}">{{$i}}</a>
+    {{end}}
+{{end}}

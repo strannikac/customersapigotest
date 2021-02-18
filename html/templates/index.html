@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{.MetaTitle}}</title>
+
+        <meta name="keywords"    content="{{.MetaDescription}}" />
+        <meta name="description" content="{{.MetaKeywords}}" />	
+
+        <meta name="viewport" content="width=100%" />
+        
+        <link rel="stylesheet" media="all" href="/css/main.css"/>
+        <link rel="stylesheet" media="all" href="/css/layout.css"/>
+        <link rel="stylesheet" media="all" href="/css/jquery-ui.css"/>
+        <link rel="stylesheet" media="all" href="/css/mobile.css"/>
+        
+        <script>
+            const apiUrl = '{{.ApiUrl}}';
+            const homeUrl = '{{.HomeUrl}}';
+            let ARR_LOCALES = '{{.Locale}}';
+            let languageId = {{.LanguageId}};
+            let languageIso = '{{.LanguageIso}}';
+        </script>
+			
+        <script src="/js/jquery-3.2.1.min.js"></script>
+        <script src="/js/jquery-ui.min.js"></script>
+        <script src="/js/client.js"></script>
+        <script src="/js/main.js"></script>
+    </head>
+	
+    <body>
+        <header>
+            <div class="block-center">
+                <div class="header-wrap">
+                    <a class="logo js-link-home" href="{{.HomeUrl}}">Logo</a>
+
+                    <div class="lang-switcher js-lang-switcher">
+                        <a href="#" class="current js-current">
+                            <img src="/images/langs/{{.LanguageIso}}.svg"/>{{.LanguageName}}
+                        </a>
+                    
+                        <ul>
+                            {{range .Languages}}
+                                <li class="{{.Class}}">
+                                    <a href="{{.Link}}" data-iso="{{.Iso}}" data-id="{{.Id}}">
+                                        <img src="/images/langs/{{.Iso}}.svg"/>{{.Name}}
+                                    </a>
+                                </li>
+                            {{end}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="block-center block-main js-content">
+            {{.Content}}
+        </div>
+
+        <footer>
+            <div class="block-center">
+                <div class="footer-wrap">
+                    <div class="copyrights">&copy; 2021 ApiCustomers</div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
